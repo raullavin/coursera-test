@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Formulario de Compra</title>
+</head>
+<body>
+<h3>Formulario de Compra</h3>
+<form action="/php/insertar_cv.php" method="post" enctype="multipart/form-data">
+
+<fieldset>
+  <legend>Formulario de Compra</legend>
+<strong>Nombre y Apellidos</strong> <br>
+<input type="text" name="nombre" value="" size="50" maxlength="80"/>
+</br><br/><br/>
+
+<label><strong>Tipo de Tarjeta</strong></label> <br/>
+  <input type="radio" name="tipo de tarjeta" value="VISA" /> VISA <br/>
+  <input type="radio" name="tipo de tarjeta" value="Mastercard" /> Mastercard <br/>
+  <input type="radio" name="tipo de tarjeta" value="Otro" /> Otro <br/>
+<br/></br>
+
+<label for="Caduca"><strong>Caduca</strong></label> <br/>
+  <input type="text" size="3" maxlength="2" id="caduca" name="caduca" />
+  de
+  <select id="fecha_mes" name="fecha_mes">
+    <option value="Enero">Enero</option>
+    <option value="2">Febrero</option>
+    <option value="3">Marzo</option>
+    <option value="4">Abril</option>
+    <option value="5">Mayo</option>
+    <option value="6">Junio</option>
+    <option value="7">Julio</option>
+    <option value="8">Agosto</option>
+    <option value="9">Septiembre</option>
+    <option value="10">Octubre</option>
+    <option value="11">Noviembre</option>
+    <option value="12">Diciembre</option>
+  </select>
+  de
+   <input type="text" size="3" maxlength="4" id="fecha_ano" name="fecha_ano" />
+   <br/><br/>
+
+<label for="Observaciones"><strong>Observaciones</strong></label> <br/>
+<textarea name="Observaciones" id="Observaciones" cols="50" rows="7"></textarea>
+<br/><br/>
+
+<label for="entregar en:"><strong>Entregar en:</strong></label> <br/>
+  <select id="entregar en:" name="entregar en:">
+    <option value="" selected="selected">- selecciona -</option>
+    <option value="1">Alava</option>
+    <option value="2">Asturias</option>
+    <option value="3">Cantabria</option>
+    <option value="4">Extremadura</option>
+    <option value="5">Madrid</option>
+    <option value="6">Murcia</option>
+    <option value="6">Galicia</option>
+    <option value="6">Navarra</option>
+    <option value="6">Barcelona</option>
+   </select>
+   <br/><br/>
+
+  <strong>Horario de entrega</strong> <br>
+  <input type="datetime-local">
+  <br/><br/>
+
+<label><strong>Como nos conoces</strong></label> <br/>
+  <input type="checkbox" name="como nos conoces" value="Por amigos"/> Por un amigo <br/>
+  <input type="checkbox" name="como nos conoces" value="Por un articulo"/> Por un articulo <br/>
+  <input type="checkbox" name="como nos conoces" value="Por Google"/> Por Google <br/>
+  <br/><br/>
+
+  <label><strong>Valora nuestra pagina Web</strong></label> <br/>
+  <input type="radio" name="valora nuestra pagina web" value="Bien" /> Bien 
+  <input type="radio" name="valora nuestra pagina web" value="Regular" /> Regular 
+  <input type="radio" name="valora nuestra pagina web" value="Mal" /> Mal 
+  <br/></br>
+
+  <label><strong>¿Quieres recibir mas información?</strong></label> <br/>
+  <input type="radio" name="¿quieres recibir mas informacion?" value="Si" /> Si
+  <input type="radio" name="¿quieres recibir mas informacion?" value="No" /> No
+  <br/></br>
+
+  <label><strong>¿Quieres recibir llamadas por telefono?</strong></label> <br/>
+  <input type="radio" name="¿quieres recibir llamadas por telefono?" value="Si" /> Si
+  <input type="radio" name="quieres recibir llamadas por telefono?" value="No" /> No 
+  <br/></br>
+
+  <input type="submit" name="enviar" value="Enviar" />
+  <input type="reset" name="limpiar" value="Borrar los datos introducidos" />
+
+</fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Rellena tu CV</title>
+</head>
+<body>
+<h3>Rellena tu CV</h3>
+<form action="/php/insertar_cv.php" method="post" enctype="multipart/form-data">
+
+<fieldset>
+  <legend>Datos personales</legend>
+
+  <label for="provincia">Provincia</label> <br/>
+  <select id="provincia" name="provincia">
+  	<option value="" selected="selected">- selecciona -</option>
+    <option value="1">Alava</option>
+    <option value="2">Asturias</option>
+    <option value="3">Cantabria</option>
+    <option value="4">Extremadura</option>
+    <option value="5">Madrid</option>
+    <option value="6">Murcia</option>
+   </select>
+   <br/><br/>
+
+  <label for="fecha_dia">Fecha de nacimiento</label> <br/>
+  <input type="text" size="3" maxlength="2" id="fecha_dia" name="fecha_dia" />
+  de
+  <select id="fecha_mes" name="fecha_mes">
+  	<option value="Enero">Enero</option>
+  	<option value="2">Febrero</option>
+  	<option value="3">Marzo</option>
+  	<option value="4">Abril</option>
+  	<option value="5">Mayo</option>
+  	<option value="6">Junio</option>
+  	<option value="7">Julio</option>
+  	<option value="8">Agosto</option>
+  	<option value="9">Septiembre</option>
+  	<option value="10">Octubre</option>
+  	<option value="11">Noviembre</option>
+  	<option value="12">Diciembre</option>
+  </select>
+  de
+   <input type="text" size="3" maxlength="4" id="fecha_ano" name="fecha_ano" />
+   <br/><br/>
+
+  <label for="temas de interes">Temas de interes</label> <br/>
+  <select size="4" id="temasDeInteres" name="temasDeInteres">
+  	<option value="1">Administracion de bases de datos</option>
+    <option value="2">Analisis y programacion</option>
+    <option value="3">Arquitectura</option>
+    <option value="4">Calidad</option>
+    <option value="5">ERP, CRM, Business Intelligence</option>
+    <option value="6">Software</option>
+    <option value="7">Hardware</option>
+    <option value="8">Otros</option>
+</select>
+</fieldset>
+</form>
+</body>
+</html>

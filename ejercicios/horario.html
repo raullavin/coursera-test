@@ -1,0 +1,63 @@
+<html>
+<head><title>Ejemplo de tabla sencilla</title></head>
+<style>
+  table{border-collapse: collapse;}
+  table, td, th {border: 1px solid black;}
+</style>
+<body>
+<h1>Horario ASIR 1</h1>
+
+<table>
+  <colgroup span="1" style="background:orange;" />
+  <colgroup span="5" style="background:yellow;" />
+<tr align="center">
+  <td><strong>Horas</strong></td>
+  <td><strong>Lunes</strong></td>
+  <td><strong>Martes</strong></td>
+  <td><strong>Miercoles</strong></td>
+  <td><strong>Jueves</strong></td>
+  <td><strong>Viernes</strong></td>
+</tr>
+
+<tr align="center">
+  <td>08:30</td>
+  <td rowspan="2">PAR</td>
+  <td rowspan="2">FHW</td>
+  <td>FHW</td>
+  <td rowspan="2">PAR</td>
+  <td rowspan="2">ISO</td>
+</tr>
+<tr align="center">
+  <td>09:20</td>
+  <td>ISO</td>
+</tr>
+<tr><td colspan="6" align="center">RECREO</td></tr>
+<tr align="center">
+  <td>10:30</td>
+  <td rowspan="2">LMSG</td>
+  <td rowspan="2">PAR</td>
+  <td>ISO</td>
+  <td rowspan="2">ISO</td>
+  <td>ISO</td>
+</tr>
+<tr align="center">
+  <td>11:20</td>
+  <td>FOL</td>
+  <td>FOL</td>
+</tr>
+<tr><td colspan="6" align="center">RECREO</td></tr>
+<tr align="center">
+  <td>12:35</td>
+  <td rowspan="2">GBD</td>
+  <td rowspan="2">GBD</td>
+  <td rowspan="2">LMSG</td>
+  <td>ISO</td>
+  <td rowspan="2">GBD</td>
+</tr>
+<tr align="center">
+  <td>13:25</td>
+  <td>FOL</td>
+</tr>
+</table>
+</body>
+</html>

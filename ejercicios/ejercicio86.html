@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Formulario de Contacto ampliado</title>
+</head>
+<body>
+<h3>Formulario de Contacto ampliado</h3>
+<form action="/php/insertar_cv.php" method="post" enctype="multipart/form-data">
+
+<fieldset>
+  <legend>Formulario de Contacto</legend>
+Nombre <br>
+<input type="text" name="nombre" value="" size="20" maxlength="30"/>
+</br>
+
+Apellidos <br>
+<input type="text" name="apellidos" value="" size="40" maxlength="40"/>
+</br>
+
+Sexo <br>
+<input type="radio" name="sexo" value="hombre" checked="checked" > Hombre
+<input type="radio" name="sexo" value="mujer" > Mujer
+</br>
+
+Email <br>
+<input type="text" name="apellidos" value="" size="50" maxlength="40"/>
+</br>
+
+<label for="Sugerencias">Sugerencias</label> <br/>
+<textarea name="Sugerencias" id="Sugerencias" cols="50" rows="7"></textarea>
+<br/><br/>
+
+<label for="Formato de envio">Formato de envio</label> <br/>
+  <select id="Formato de envio" name="Formato de envio">
+  	<option value="" selected="selected">- selecciona -</option>
+    <option value="1">PDF</option>
+    <option value="2">HTML</option>
+    <option value="3">ODT</option>
+   </select>
+   <br/><br/>
+
+<label>Temas de interes</label> <br/>
+  <input type="checkbox" name="temas de interes" value="LINUX"/><a href="https://www.linux.org/">LINUX
+  </a><br/>
+  <input type="checkbox" name="temas de interes" value="CSS"/> <a href="https://www.w3schools.com/css/">CSS
+  </a><br/>
+  <input type="checkbox" name="temas de interes" value="HTML"/> <a href="https://www.w3schools.com/html/">HTML
+  </a><br/>
+  <br/><br/>
+
+  <label>Cargo en la empresa</label> <br/>
+  <input type="radio" name="cargo en la empresa" value="Jefe" /> Jefe <br/>
+  <input type="radio" name="cargo en la empresa" value="Director de Ventas" /> Director de Ventas <br/>
+  <input type="radio" name="cargo en la empresa" value="Director de Marketing" /> Director de Marketing <br/>
+  <input type="radio" name="cargo en la empresa" value="Director de Compras" /> Director de Compras <br/>
+  <input type="radio" name="cargo en la empresa" value="Becario" /> Becario <br/>
+  <br/></br>
+
+  <input type="submit" name="enviar" value="Enviar" />
+  <input type="reset" name="limpiar" value="Borrar los datos introducidos" />
+
+</fieldset>
+</form>
+</body>
+</html>
